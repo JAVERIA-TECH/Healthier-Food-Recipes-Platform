@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javeria's Recipe World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="food.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Javeria's Recipes</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#">Recipes <span class="arrow-down">▼</span></a>
+           <!-- Replace the entire dropdown-content div with this -->
+<div class="dropdown-content">
+  <div class="dropdown-column">
+    <h4>Breakfast</h4>
+    <a href="#nihari">Nihari</a>
+    <a href="#halwaPuri">Halwa Puri</a>
+    <a href="#desiOmelette">Desi Omelette</a>
+    <a href="#payee">Payee</a>
+    <a href="#doodhPatti">Doodh Patti</a>
+    <a href="#alooParatha">Aloo Paratha</a>
+    <a href="#andaRoll">Anda Roll</a>
+  </div>
+  <div class="dropdown-column">
+    <h4>Lunch</h4>
+    <a href="#biryani">Biryani</a>
+    <a href="#chickenKarahi">Chicken Karahi</a>
+    <a href="#daalChawal">Daal Chawal</a>
+    <a href="#sabziPulao">Sabzi Pulao</a>
+    <a href="#bhindiGhost">Bhindi Gosht</a>
+  </div>
+  <div class="dropdown-column">
+    <h4>Dinner</h4>
+    <a href="#yakhniPulao">Yakhni Pulao</a>
+    <a href="#dahiBhally">Dahi Bhallay</a>
+    <a href="#pakory">Pakoray</a>
+  </div>
+  <div class="dropdown-column">
+    <h4>Desserts</h4>
+    <a href="#gulabJamun">Gulab Jamun</a>
+    <a href="#rasMalai">Ras Malai</a>
+    <a href="#sheerKhurma">Sheer Khurma</a>
+    <a href="#zarda">Zarda</a>
+    <a href="#shahiTukrey">Shahi Tukray</a>
+  </div>
+</div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Javeria's Recipe World</h1>
+      <p class="tagline">Discover Authentic Pakistani Cuisine</p>
+      <div class="search-container">
+        <input type="text" placeholder="Search recipes..." id="searchInput">
+        <button class="search-btn">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <h2>About This Project</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>This recipe website is a frontend web project designed and developed by <strong>Javeria Fatima</strong>, a passionate web development student from Rawalpindi, Pakistan.</p>
+            <p>The project showcases authentic Pakistani recipes with modern web design techniques. It was created as part of a frontend development internship, focusing on:</p>
+            <ul>
+              <li>Clean UI/UX design</li>
+              <li>Responsive layout</li>
+              <li>Interactive elements</li>
+              <li>User-friendly navigation</li>
+            </ul>
+            <p>All recipes are carefully selected from traditional Pakistani cuisine, with detailed instructions to help both beginners and experienced cooks.</p>
+          </div>
+          <div class="about-image">
+            <div class="profile-placeholder">J</div>
+            <div class="student-badge">Student Project</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipe-filter">
+      <h2>Browse Recipes</h2>
+      <div class="filter-options">
+        <button class="filter-btn active" data-category="all">All Recipes</button>
+        <button class="filter-btn" data-category="breakfast">Breakfast</button>
+        <button class="filter-btn" data-category="lunch">Lunch</button>
+        <button class="filter-btn" data-category="dinner">Dinner</button>
+        <button class="filter-btn" data-category="dessert">Desserts</button>
+      </div>
+    </section>
+
+    <section class="recipes-container">
+      <!-- Nihari Recipe -->
+      <article id="nihari" class="recipe-card" data-category="breakfast">
+        <div class="recipe-header">
+          <h3>Nihari</h3>
+          <span class="recipe-category">Breakfast</span>
+        </div>
+        <img src="https://www.pakistantravelblog.com/wp-content/uploads/2020/06/monal-lahore-nihari.jpg" alt="Nihari" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A rich, slow-cooked beef stew infused with spices, traditionally enjoyed in Lahore and Karachi.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 kg beef shank (with bone)</li>
+                <li>1 cup oil or ghee</li>
+                <li>1 large onion (sliced)</li>
+                <li>1 tbsp ginger garlic paste</li>
+                <li>1 tbsp nihari masala</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp turmeric</li>
+                <li>2 tbsp wheat flour</li>
+                <li>Salt to taste</li>
+                <li>Water as needed</li>
+                <li>Garnish: Ginger slices, green chilies, lemon, coriander</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Heat oil/ghee in a large pot. Add onions and fry until golden brown.</li>
+                <li>Add ginger garlic paste and sauté for a minute.</li>
+                <li>Add beef and cook until it changes color.</li>
+                <li>Add all spices and cook for 10-15 mins, stirring frequently.</li>
+                <li>Add enough water to cover the meat. Cook on low flame for 4-6 hours until tender.</li>
+                <li>Mix wheat flour in water, add to the curry to thicken.</li>
+                <li>Garnish and serve hot with naan or kulcha.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Halwa Puri Recipe -->
+      <article id="halwaPuri" class="recipe-card" data-category="breakfast">
+        <div class="recipe-header">
+          <h3>Halwa Puri with Chana & Aloo Tarkari</h3>
+          <span class="recipe-category">Breakfast</span>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOtSeVyKVv2e4VeYW8xXHeAWiRObA70i34w&s" alt="Halwa Puri" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A classic breakfast combo, usually enjoyed on Sundays, consisting of deep-fried bread (puri), sweet halwa made from semolina, chickpeas (chana), and spiced potatoes (aloo tarkari).</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients for Puri</h4>
+              <ul>
+                <li>2 cups all-purpose flour</li>
+                <li>2 tbsp semolina (sooji)</li>
+                <li>Salt & water (to knead)</li>
+                <li>Oil (for deep frying)</li>
+              </ul>
+              
+              <h4>Ingredients for Halwa</h4>
+              <ul>
+                <li>1 cup semolina (sooji)</li>
+                <li>1/2 cup ghee (clarified butter)</li>
+                <li>1/2 cup sugar</li>
+                <li>2 cups water</li>
+                <li>Optional: Cardamom, raisins, almonds</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li><strong>Puri:</strong> Knead dough, rest for a bit, roll into small discs, and deep fry until they puff up.</li>
+                <li><strong>Halwa:</strong> Roast semolina in ghee, add sugar and water, and cook until it becomes thick.</li>
+                <li><strong>Chana:</strong> Fry onions, add tomatoes and spices, then add chickpeas and let it simmer.</li>
+                <li><strong>Aloo Tarkari:</strong> Sauté onions, tomatoes, and spices, then add potatoes and cook for 10 minutes.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Payee Recipe -->
+      <article id="payee" class="recipe-card" data-category="breakfast">
+        <div class="recipe-header">
+          <h3>Payee (Trotters Curry)</h3>
+          <span class="recipe-category">Breakfast</span>
+        </div>
+        <img src="https://flavoredbyfatima.com/wp-content/uploads/2020/10/mutton-paya-mutton-trotters-500x500.jpeg" alt="Payee" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A rich and flavorful stew made with cow or goat trotters, full of gelatin, a special dish from Lahore.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>4 cleaned cow/goat trotters</li>
+                <li>1 large onion, sliced</li>
+                <li>2 tbsp ginger garlic paste</li>
+                <li>red chili, turmeric, coriander, garam masala, salt</li>
+                <li>1/2 cup wheat flour (to thicken the curry)</li>
+                <li>6-8 cups water</li>
+                <li>Oil or ghee for cooking</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Heat oil in a pot and fry onions until golden brown.</li>
+                <li>Add ginger garlic paste and spices. Cook until the oil separates.</li>
+                <li>Add trotters, stir for 10 minutes.</li>
+                <li>Add water, cover, and let it cook slowly for 6-8 hours (or pressure cook for 1-2 hours).</li>
+                <li>Mix flour with water and add it to thicken the curry. Serve hot.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Desi Omelette Recipe -->
+      <article id="desiOmelette" class="recipe-card" data-category="breakfast">
+        <div class="recipe-header">
+          <h3>Desi Omelette</h3>
+          <span class="recipe-category">Breakfast</span>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw65Yd17PEsY1R7WGErS8iUx8YZAUpM-1X2g&s" alt="Desi Omelette" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A spicy omelette made with veggies and herbs, commonly eaten for breakfast.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>2 eggs</li>
+                <li>1 onion, chopped</li>
+                <li>1 green chili, chopped</li>
+                <li>Fresh coriander leaves</li>
+                <li>Salt, chili flakes</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Beat eggs and add all ingredients.</li>
+                <li>Heat oil in a pan, pour the egg mixture.</li>
+                <li>Cook both sides until golden.</li>
+                <li>Serve with paratha or toast.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Aloo Paratha Recipe -->
+      <article id="alooParatha" class="recipe-card" data-category="breakfast">
+        <div class="recipe-header">
+          <h3>Aloo ke Paratha</h3>
+          <span class="recipe-category">Breakfast</span>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqoZuXsmD6IKkP-IsQUuZbOIjSGp6U3YAv0g&s" alt="Aloo Paratha" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">Flatbreads stuffed with spicy mashed potatoes, popular in Punjab.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>2 cups whole wheat flour</li>
+                <li>2 boiled potatoes</li>
+                <li>Spices: cumin, chili, salt, garam masala</li>
+                <li>Fresh coriander, green chili</li>
+                <li>Oil or ghee for frying</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Make dough from flour and water.</li>
+                <li>Mash potatoes with spices and herbs.</li>
+                <li>Roll the dough, fill with the mashed potatoes, seal, and roll again.</li>
+                <li>Cook on a tawa (griddle) with ghee until golden.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Anda Roll Recipe -->
+      <article id="andaRoll" class="recipe-card" data-category="breakfast">
+        <div class="recipe-header">
+          <h3>Anda Paratha Roll</h3>
+          <span class="recipe-category">Breakfast</span>
+        </div>
+        <img src="https://i.ytimg.com/vi/pbIu7LxuAQM/maxresdefault.jpg" alt="Anda Roll" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A street-style roll filled with a spiced egg and served with chutneys.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 paratha (can use frozen or fresh)</li>
+                <li>1 egg</li>
+                <li>Salt, pepper</li>
+                <li>Optional: Onion and green chutney</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Cook paratha on a tawa (flat griddle).</li>
+                <li>Beat the egg and season with salt and pepper, then pour it on a hot tawa.</li>
+                <li>Place the paratha on top and press gently until the egg sticks.</li>
+                <li>Roll it up with onions and chutney.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Biryani Recipe -->
+      <article id="biryani" class="recipe-card" data-category="lunch">
+        <div class="recipe-header">
+          <h3>Biryani</h3>
+          <span class="recipe-category">Lunch</span>
+        </div>
+        <img src="https://j6e2i8c9.rocketcdn.me/wp-content/uploads/2020/09/Chicken-Biryani-Recipe-01-1.jpg" alt="Biryani" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A festive, layered rice dish with spiced chicken or meat, saffron, and fried onions, often served at special occasions.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>500g chicken</li>
+                <li>2 cups basmati rice</li>
+                <li>2 onions (sliced)</li>
+                <li>2 tomatoes (chopped)</li>
+                <li>1/2 cup yogurt</li>
+                <li>1 tbsp ginger-garlic paste</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp turmeric</li>
+                <li>1 tsp biryani masala</li>
+                <li>Salt to taste</li>
+                <li>Saffron or yellow food color</li>
+                <li>Oil and water as needed</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Boil rice with salt until 70% cooked. Drain and set aside.</li>
+                <li>Fry onions until golden, remove half for garnish.</li>
+                <li>In same pot, add ginger-garlic paste, chicken, tomatoes, yogurt, spices. Cook until oil separates and chicken is done.</li>
+                <li>In a large pot, layer rice and chicken curry. Sprinkle food color or saffron water, and fried onions.</li>
+                <li>Cover tightly and steam (dum) for 20 minutes on low heat.</li>
+                <li>Gently mix and serve.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Chicken Karahi Recipe -->
+      <article id="chickenKarahi" class="recipe-card" data-category="lunch">
+        <div class="recipe-header">
+          <h3>Chicken Karahi</h3>
+          <span class="recipe-category">Lunch</span>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvu_FqVp5QVCDPcee5McXzC8cYdsmGLuwW8w&s" alt="Chicken Karahi" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A spicy and tomato-rich chicken curry made in a wok (karahi), popular across Pakistan.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 kg chicken (with bones)</li>
+                <li>3 tomatoes (blanched and chopped)</li>
+                <li>1 tbsp ginger-garlic paste</li>
+                <li>1 tsp crushed red chili</li>
+                <li>1/2 tsp turmeric</li>
+                <li>1/2 tsp cumin seeds</li>
+                <li>Salt to taste</li>
+                <li>1/2 cup oil</li>
+                <li>Green chilies and coriander for garnish</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Heat oil in a karahi, add chicken and sauté for 5-6 minutes.</li>
+                <li>Add ginger-garlic paste and spices, cook for another few minutes.</li>
+                <li>Add tomatoes, cover, and cook until soft.</li>
+                <li>Uncover and cook until oil separates and chicken is tender.</li>
+                <li>Garnish with green chilies and coriander.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Daal Chawal Recipe -->
+      <article id="daalChawal" class="recipe-card" data-category="lunch">
+        <div class="recipe-header">
+          <h3>Daal Chawal (Lentils & Rice)</h3>
+          <span class="recipe-category">Lunch</span>
+        </div>
+        <img src="https://ikneadtoeat.com/wp-content/uploads/2022/10/yellow-daal-recipe-10.jpg" alt="Daal Chawal" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">Comfort food made of simple yellow lentils (moong or masoor) served with plain rice and spicy tempering.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 cup moong/masoor daal</li>
+                <li>1/2 tsp turmeric</li>
+                <li>Salt to taste</li>
+                <li>1 tbsp oil or ghee</li>
+                <li>For Tarka:</li>
+                <li>1 onion (sliced)</li>
+                <li>2 garlic cloves (sliced)</li>
+                <li>1/2 tsp cumin seeds</li>
+                <li>2 whole red chilies</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Wash and boil lentils with turmeric and salt until soft.</li>
+                <li>In a pan, heat oil/ghee for tarka. Fry onions, garlic, cumin, and chilies until golden.</li>
+                <li>Pour tarka over cooked daal.</li>
+                <li>Serve hot with plain boiled rice.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sabzi Pulao Recipe -->
+      <article id="sabziPulao" class="recipe-card" data-category="lunch">
+        <div class="recipe-header">
+          <h3>Sabzi Pulao (Mixed Vegetable Rice)</h3>
+          <span class="recipe-category">Lunch</span>
+        </div>
+        <img src="https://i.ytimg.com/vi/1kPM7Ln84Bg/hq720.jpg" alt="Sabzi Pulao" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A fragrant and colorful rice dish cooked with seasonal vegetables like potatoes, carrots, peas, and bell peppers.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>2 cups basmati rice</li>
+                <li>1 potato (cubed)</li>
+                <li>1 carrot (sliced)</li>
+                <li>1/2 cup green peas</li>
+                <li>1/2 bell pepper (chopped)</li>
+                <li>2 onions (sliced)</li>
+                <li>1 tomato (chopped)</li>
+                <li>2 green chilies</li>
+                <li>1 tsp cumin seeds</li>
+                <li>1/2 tsp garam masala</li>
+                <li>1/2 tsp black pepper</li>
+                <li>Salt to taste</li>
+                <li>4 cups water</li>
+                <li>1/4 cup oil</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Wash and soak rice for 30 minutes.</li>
+                <li>Heat oil in a pot, add cumin seeds and sliced onions.</li>
+                <li>Sauté until light brown, then add green chilies and tomato.</li>
+                <li>Add all vegetables, salt, and spices. Cook for 5-7 minutes.</li>
+                <li>Add 4 cups water and bring to a boil.</li>
+                <li>Drain rice and add to the pot.</li>
+                <li>Cook on medium heat until water is absorbed, then simmer on low (dum) for 10 minutes.</li>
+                <li>Fluff rice and serve.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bhindi Gosht Recipe -->
+      <article id="bhindiGhost" class="recipe-card" data-category="lunch">
+        <div class="recipe-header">
+          <h3>Bhindi Gosht (Okra & Meat)</h3>
+          <span class="recipe-category">Lunch</span>
+        </div>
+        <img src="https://i.ytimg.com/vi/E07DZcD0KYc/hq720.jpg" alt="Bhindi Gosht" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">Bhindi Gosht is a flavorful dish made with tender mutton or beef and okra (bhindi), cooked in a spiced tomato-onion gravy.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>500g mutton or beef (bone-in)</li>
+                <li>300g bhindi (okra), chopped</li>
+                <li>2 onions, sliced</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1 tbsp ginger-garlic paste</li>
+                <li>1 tsp cumin seeds</li>
+                <li>1 tsp red chili powder</li>
+                <li>1/2 tsp turmeric</li>
+                <li>1 tsp coriander powder</li>
+                <li>Salt to taste</li>
+                <li>1/2 cup oil</li>
+                <li>Fresh coriander for garnish</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Heat half the oil and fry bhindi until lightly golden, then set aside.</li>
+                <li>In a pot, heat remaining oil and fry cumin seeds.</li>
+                <li>Add onions and sauté until golden brown.</li>
+                <li>Add ginger-garlic paste, cook for a minute.</li>
+                <li>Add meat and sauté until it changes color.</li>
+                <li>Add tomatoes, chili powder, turmeric, coriander powder, and salt. Cook until oil separates.</li>
+                <li>Add 2 cups water and pressure cook or simmer until meat is tender.</li>
+                <li>Add fried bhindi and cook uncovered for 10 minutes.</li>
+                <li>Garnish with fresh coriander and serve.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Yakhni Pulao Recipe -->
+      <article id="yakhniPulao" class="recipe-card" data-category="dinner">
+        <div class="recipe-header">
+          <h3>Yakhni Pulao (Beef/Mutton)</h3>
+          <span class="recipe-category">Dinner</span>
+        </div>
+        <img src="https://recipe52.com/wp-content/uploads/2022/06/Mutton-Yakhni-pulao-22.jpg" alt="Yakhni Pulao" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A savory rice dish made with aromatic stock (yakhni) and tender meat, full of subtle spices.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>500g beef/mutton with bones</li>
+                <li>2 cups basmati rice</li>
+                <li>1 onion (sliced)</li>
+                <li>1 tbsp ginger-garlic paste</li>
+                <li>1 bay leaf, 4 cloves, 4 black peppercorns, 2 green cardamoms, 1 stick cinnamon</li>
+                <li>Salt to taste</li>
+                <li>6 cups water for stock</li>
+                <li>1/4 cup oil</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Boil meat with whole spices, salt, and ginger-garlic paste until tender. Strain and reserve yakhni.</li>
+                <li>Heat oil and sauté sliced onion until golden.</li>
+                <li>Add boiled meat and cook for 5 minutes.</li>
+                <li>Add yakhni (equal to twice the rice volume), bring to a boil.</li>
+                <li>Add soaked rice, cook until water reduces.</li>
+                <li>Cover and simmer (dum) for 10 minutes.</li>
+                <li>Serve with raita or salad.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dahi Bhallay Recipe -->
+      <article id="dahiBhally" class="recipe-card" data-category="dinner">
+        <div class="recipe-header">
+          <h3>Dahi Bhallay</h3>
+          <span class="recipe-category">Dinner</span>
+        </div>
+        <img src="https://ticklethosetastebuds.com/wp-content/uploads/2020/02/Dahi-Bhallay-3.png" alt="Dahi Bhallay" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">Soft lentil fritters soaked in spiced yogurt and topped with chutneys and chaat masala.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 cup mash daal (urad daal)</li>
+                <li>1/2 tsp baking soda</li>
+                <li>Salt to taste</li>
+                <li>2 cups thick yogurt (whisked)</li>
+                <li>1 tsp roasted cumin powder</li>
+                <li>1 tsp chaat masala</li>
+                <li>Sweet tamarind chutney</li>
+                <li>Green chutney</li>
+                <li>Oil for frying</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Soak daal for 4-6 hours and grind to a smooth batter.</li>
+                <li>Add salt and baking soda, beat until fluffy.</li>
+                <li>Deep fry spoonfuls until golden.</li>
+                <li>Soak bhallay in warm water for 10 minutes, then squeeze water out.</li>
+                <li>Place in a dish and pour over seasoned yogurt.</li>
+                <li>Top with chutneys, cumin powder, and chaat masala.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pakoray Recipe -->
+      <article id="pakory" class="recipe-card" data-category="dinner">
+        <div class="recipe-header">
+          <h3>Pakoray (My Favourite)</h3>
+          <span class="recipe-category">Dinner</span>
+        </div>
+        <img src="https://i.ytimg.com/vi/nT0WTm3GAp0/hq720.jpg" alt="Pakoray" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">Crispy fried fritters made with gram flour and vegetables like onions, potatoes, and spinach.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 cup besan (gram flour)</li>
+                <li>1 onion (sliced)</li>
+                <li>1 potato (thinly sliced)</li>
+                <li>1/2 cup chopped spinach</li>
+                <li>1 green chili, chopped</li>
+                <li>1/2 tsp red chili powder</li>
+                <li>1/2 tsp carom seeds (ajwain)</li>
+                <li>Salt to taste</li>
+                <li>Water as needed</li>
+                <li>Oil for frying</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Mix all ingredients to make a thick batter.</li>
+                <li>Heat oil and drop small portions into oil.</li>
+                <li>Fry until golden brown and crisp.</li>
+                <li>Serve with green chutney or ketchup.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Gulab Jamun Recipe -->
+      <article id="gulabJamun" class="recipe-card" data-category="dessert">
+        <div class="recipe-header">
+          <h3>Gulab Jamun</h3>
+          <span class="recipe-category">Dessert</span>
+        </div>
+        <img src="https://media.chefdehome.com/740/0/0/gulab-jamun/indian-gulab-jamun-chefdehome-1.jpg" alt="Gulab Jamun" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">Soft, deep-fried milk-solid balls soaked in fragrant sugar syrup. A classic South Asian dessert.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 cup milk powder</li>
+                <li>1/4 cup all-purpose flour</li>
+                <li>1/4 tsp baking soda</li>
+                <li>2 tbsp ghee</li>
+                <li>Milk as needed</li>
+                <li>Oil/ghee for frying</li>
+                <li>2 cups sugar</li>
+                <li>1.5 cups water</li>
+                <li>Cardamom and rose water (optional)</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Mix dry ingredients, add ghee and milk to form soft dough.</li>
+                <li>Make smooth balls, no cracks.</li>
+                <li>Fry on low heat until golden.</li>
+                <li>Make syrup with sugar, water, cardamom.</li>
+                                <li>Add fried jamuns to warm syrup and soak for 2-3 hours.</li>
+                <li>Serve warm or at room temperature.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ras Malai Recipe -->
+      <article id="rasMalai" class="recipe-card" data-category="dessert">
+        <div class="recipe-header">
+          <h3>Ras Malai</h3>
+          <span class="recipe-category">Dessert</span>
+        </div>
+        <img src="https://prashantcorner.com/cdn/shop/files/RasmalaiSR-3_b0e4cd60-a20b-45e7-96f8-88776536d7c0.png?v=1720595089&width=1946" alt="Ras Malai" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">Soft paneer patties soaked in sweetened, thickened milk flavored with cardamom and saffron.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 liter full-fat milk</li>
+                <li>1/2 cup sugar</li>
+                <li>1 tbsp lemon juice/vinegar</li>
+                <li>1 liter milk for rabri</li>
+                <li>1/2 tsp cardamom powder</li>
+                <li>Few strands saffron</li>
+                <li>Chopped pistachios for garnish</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Boil 1 liter milk, add lemon juice to curdle it.</li>
+                <li>Strain through muslin cloth to make paneer.</li>
+                <li>Knead paneer until smooth, make small discs.</li>
+                <li>Boil sugar syrup and cook discs for 15 minutes.</li>
+                <li>For rabri: Boil milk until reduced by half, add sugar, cardamom, saffron.</li>
+                <li>Soak cooked discs in rabri for 2 hours.</li>
+                <li>Garnish with pistachios and serve chilled.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sheer Khurma Recipe -->
+      <article id="sheerKhurma" class="recipe-card" data-category="dessert">
+        <div class="recipe-header">
+          <h3>Sheer Khurma</h3>
+          <span class="recipe-category">Dessert</span>
+        </div>
+        <img src="https://www.mymasalabox.in/wp-content/uploads/2021/01/Sheer-Khurma-2.jpg" alt="Sheer Khurma" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A festive vermicelli pudding made with milk, dates, and dry fruits, traditionally served on Eid.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 liter full-fat milk</li>
+                <li>1/2 cup vermicelli</li>
+                <li>1/2 cup sugar</li>
+                <li>10-12 dates (chopped)</li>
+                <li>2 tbsp ghee</li>
+                <li>Assorted nuts (almonds, pistachios, cashews)</li>
+                <li>1/2 tsp cardamom powder</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Heat ghee and lightly fry vermicelli until golden.</li>
+                <li>Boil milk in a separate pot.</li>
+                <li>Add fried vermicelli to milk and cook until soft.</li>
+                <li>Add sugar, dates, and cardamom powder.</li>
+                <li>Simmer for 10-15 minutes until thickened.</li>
+                <li>Garnish with fried nuts and serve warm or chilled.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Zarda Recipe -->
+      <article id="zarda" class="recipe-card" data-category="dessert">
+        <div class="recipe-header">
+          <h3>Zarda (Sweet Rice)</h3>
+          <span class="recipe-category">Dessert</span>
+        </div>
+        <img src="https://www.masala.tv/wp-content/uploads/2019/10/Zarda-Tarka.jpg" alt="Zarda" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A fragrant sweet rice dish colored yellow or orange, made with sugar, ghee, and dry fruits.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>2 cups basmati rice</li>
+                <li>1 cup sugar</li>
+                <li>1/2 cup ghee</li>
+                <li>1/4 tsp yellow/orange food color</li>
+                <li>10-12 almonds (sliced)</li>
+                <li>10-12 raisins</li>
+                <li>4-5 green cardamoms</li>
+                <li>1/2 tsp cardamom powder</li>
+                <li>4 cups water</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Soak rice for 30 minutes, then boil until 70% cooked. Drain.</li>
+                <li>Heat ghee in a pan, fry almonds and raisins. Remove.</li>
+                <li>In same ghee, add cardamoms, food color, and 1/4 cup water.</li>
+                <li>Add sugar and let it dissolve completely.</li>
+                <li>Add rice and mix gently. Cover and cook on low heat for 15 minutes.</li>
+                <li>Garnish with fried nuts and serve warm.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Shahi Tukray Recipe -->
+      <article id="shahiTukrey" class="recipe-card" data-category="dessert">
+        <div class="recipe-header">
+          <h3>Shahi Tukray (Bread Pudding)</h3>
+          <span class="recipe-category">Dessert</span>
+        </div>
+        <img src="https://whatleenadid.com/wp-content/uploads/2020/05/img_0548-1.jpg?w=1000" alt="Shahi Tukray" class="recipe-img">
+        <div class="recipe-content">
+          <p class="recipe-desc">A rich Mughlai dessert made with fried bread slices soaked in thickened, sweetened milk and garnished with nuts.</p>
+          <div class="recipe-details">
+            <div class="ingredients">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>6 slices white bread (crusts removed)</li>
+                <li>1 liter full-fat milk</li>
+                <li>1/2 cup sugar</li>
+                <li>1/4 tsp cardamom powder</li>
+                <li>Few strands saffron</li>
+                <li>Ghee for frying</li>
+                <li>Chopped pistachios and almonds for garnish</li>
+              </ul>
+            </div>
+            <div class="instructions">
+              <h4>Instructions</h4>
+              <ol>
+                <li>Cut bread into triangles and fry in ghee until golden. Set aside.</li>
+                <li>Boil milk until reduced to half, stirring frequently.</li>
+                <li>Add sugar, cardamom, and saffron. Cook until slightly thickened.</li>
+                <li>Arrange fried bread in a dish and pour warm milk mixture over it.</li>
+                <li>Let it soak for 1-2 hours.</li>
+                <li>Garnish with nuts and serve chilled.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  <section id="contact" class="contact-section">
+  <h2>Contact Javeria</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+      <p>Have questions about recipes?...</p>
+      <div class="contact-details">
+        <p><i class="fas fa-envelope"></i> email@example.com</p>
+        <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rawalpindi, Pakistan</p>
+      </div>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">Javeria's Recipes</div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-credit">
+        <p>&copy; 2023 Javeria's Recipe World. All rights reserved.</p>
+        <p>Created by Javeria Fatima as a frontend development project.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="food.js"></script>
+</body>
+</html>
